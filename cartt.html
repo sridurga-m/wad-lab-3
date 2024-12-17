@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cartt - CHA Hospitals</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h2 {
+            color: #0073e6;
+        }
+
+        p {
+            font-size: 18px;
+            color: #333;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            background-color: #fff;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border: 1px solid #ccc;
+        }
+
+        th {
+            background-color: #0073e6;
+            color: white;
+        }
+
+        td {
+            color: #555;
+        }
+
+        button {
+            background-color: #0073e6;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        button:hover {
+            background-color: #005bb5;
+        }
+
+        /* Mobile Responsiveness */
+        @media only screen and (max-width: 768px) {
+            p {
+                font-size: 16px;
+            }
+
+            th, td {
+                font-size: 14px;
+                padding: 10px;
+            }
+
+            button {
+                width: 100%;
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h2>Your Appointments Cart</h2>
+    <p>Here you can view the services you've selected and confirm your appointments:</p>
+
+    <table>
+        <tr>
+            <th>Service</th>
+            <th>Doctor</th>
+            <th>Date</th>
+            <th>Price</th>
+        </tr>
+        <tr>
+            <td>Cardiology Consultation</td>
+            <td>Dr. Pranay.P</td>
+            <td>2024-12-20</td>
+            <td>$150</td>
+        </tr>
+        <tr>
+            <td>Neurology Consultation</td>
+            <td>Dr. Sridurga.M</td>
+            <td>2024-12-22</td>
+            <td>$200</td>
+        </tr>
+    </table>
+
+    <button type="button">Proceed to Checkout</button>
+</body>
+</html>

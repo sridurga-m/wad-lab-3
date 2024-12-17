@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHA Hospitals</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        /* First Row (Header and Logo) */
+        .row1 {
+            background-color: #f2f2f2;
+            padding: 20px;
+            text-align: left;
+        }
+
+        .row1 img {
+            vertical-align: middle;
+        }
+
+        .row1 h1 {
+            margin: 0;
+            color: #333;
+        }
+
+        .row1 h3 {
+            margin: 5px 0 0 0;
+            font-weight: normal;
+            color: #777;
+        }
+
+        /* Second Row (Navigation Links) */
+        .row2 {
+            background-color: #0073e6;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .row2 a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 16px;
+        }
+
+        .row2 a:hover {
+            text-decoration: underline;
+        }
+
+        /* Third Row (Services Links and Content Display) */
+        .row3 {
+            padding: 20px;
+        }
+
+        .row3 ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .row3 ul li {
+            margin-bottom: 10px;
+        }
+
+        .row3 ul li a {
+            color: #0073e6;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        .row3 ul li a:hover {
+            text-decoration: underline;
+        }
+
+        /* Table Styles */
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            height: 100%;
+        }
+
+        td {
+            vertical-align: top;
+        }
+
+        iframe {
+            border: none;
+        }
+
+        /* Mobile Responsiveness */
+        @media only screen and (max-width: 768px) {
+            .row1, .row2, .row3 {
+                padding: 10px;
+            }
+
+            .row1 img {
+                width: 80px;
+                height: 80px;
+            }
+
+            .row2 a {
+                display: block;
+                margin: 10px 0;
+            }
+
+            .row3 {
+                display: block;
+            }
+
+            .row3 ul {
+                display: flex;
+                flex-wrap: wrap;
+            }
+
+            .row3 ul li {
+                flex: 1 1 100%;
+            }
+
+            iframe {
+                height: 400px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <!-- First Row -->
+        <div class="row1">
+            <table width="100%" height="100%">
+                <tr>
+                    <!-- Logo Column -->
+                    <td width="20%">
+                        <img src="logoo.png" alt="CHA Hospitals Logo" width="100" height="100">
+                    </td>
+                    <!-- Header Column -->
+                    <td>
+                        <h1>CHA Hospitals</h1>
+                        <h3>Book an Appointment | Call Us Now | Upload Prescription</h3>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- Second Row -->
+        <div class="row2">
+            <table width="100%" height="100%">
+                <tr>
+                    <!-- Navigation Links -->
+                    <td><a href="homee.html" target="contentFrame">Home</a></td>
+                    <td><a href="registrationn.html" target="contentFrame">Registration</a></td>
+                    <td><a href="cataloguee.html" target="contentFrame">Catalogue</a></td>
+                    <td><a href="cartt.html" target="contentFrame">Cart</a></td>
+                    <td><a href="contactuss.html" target="contentFrame">Contact Us</a></td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- Third Row -->
+        <div class="row3">
+            <table width="100%" height="100%">
+                <tr>
+                    <!-- Left Column (Services Links) -->
+                    <td width="20%">
+                        <ul>
+                            <li><a href="cardiologyy.html" target="contentFrame">Cardiology</a></li>
+                            <li><a href="neurologyy.html" target="contentFrame">Neurology</a></li>
+                            <li><a href="orthopedicss.html" target="contentFrame">Orthopedics</a></li>
+                            <li><a href="gynecologyy.html" target="contentFrame">Gynecology</a></li>
+                        </ul>
+                    </td>
+
+                    <!-- Right Column (Content Display) -->
+                    <td>
+                        <iframe name="contentFrame" width="100%" height="600px" src="homee.html"></iframe>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
